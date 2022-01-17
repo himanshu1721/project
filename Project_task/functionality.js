@@ -98,17 +98,17 @@ function updateVariables() {
 }
 
 function updateStatistics() {
-  document.getElementById('statistics1').innerHTML = "Total fees: " + totalFees;
-  document.getElementById('statistics2').innerHTML = "Total number of students: " + i;
-  document.getElementById('statistics3').innerHTML = "Number of students whose name starts from 'R': " + numberOfStudentsNameStartingWithR;
-  document.getElementById('statistics4').innerHTML = "City name of 4th student: " + cityNameOfFourthStudent;
-  document.getElementById('statistics5').innerHTML = "Total fees of 3rd and 5th student: " + totalFeesOf3and5Student;
-  document.getElementById('statistics6').innerHTML = "Number of students whose fee is between $2000 and $3900: " + totalNoOfStudentsFeeBetween2000And3900;
-  document.getElementById('statistics7').innerHTML = "Number of students whose fees is < $1000: " + totalNumberOfStudentsWithFeesLessThan1000;
-  document.getElementById('statistics8').innerHTML = "Number of students whose name starts from 'S' AND city name starts from 'Ch':  " + nameOfStudentByS_andCityWithCh;
-  document.getElementById('statistics9').innerHTML = "Number of students whose name starts from 'J' OR city name starts from 'H': " + NameWithJorCityWithH;
-  document.getElementById('statistics10').innerHTML = "Minimum fees:  " + minimumFees;
-  document.getElementById('statistics11').innerHTML = "Maximum fees:  " + maximumFees;
+  document.getElementById('statistics1').innerHTML = "1. Total fees: " + totalFees;
+  document.getElementById('statistics2').innerHTML = "2. Total number of students: " + i;
+  document.getElementById('statistics3').innerHTML = "3. Number of students whose name starts from 'R': " + numberOfStudentsNameStartingWithR;
+  document.getElementById('statistics4').innerHTML = "4. City name of 4th student: " + cityNameOfFourthStudent;
+  document.getElementById('statistics5').innerHTML = "5. Total fees of 3rd and 5th student: " + totalFeesOf3and5Student;
+  document.getElementById('statistics6').innerHTML = "6. Number of students whose fee is between $2000 and $3900: " + totalNoOfStudentsFeeBetween2000And3900;
+  document.getElementById('statistics7').innerHTML = "7. Number of students whose fees is < $1000: " + totalNumberOfStudentsWithFeesLessThan1000;
+  document.getElementById('statistics8').innerHTML = "8. Number of students whose name starts from 'S' AND city name starts from 'Ch':  " + nameOfStudentByS_andCityWithCh;
+  document.getElementById('statistics9').innerHTML = "9. Number of students whose name starts from 'J' OR city name starts from 'H': " + NameWithJorCityWithH;
+  document.getElementById('statistics10').innerHTML = "10. Minimum fees:  " + minimumFees;
+  document.getElementById('statistics11').innerHTML = "11. Maximum fees:  " + maximumFees;
 }
 
 function updateTable() {
