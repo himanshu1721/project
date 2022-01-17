@@ -47,7 +47,6 @@ document.getElementById("addButton").onclick = function () {
   i = myArray.length;
 
   updateVariables();
-
   updateStatistics();
   updateTable();
 }
@@ -97,6 +96,7 @@ function updateVariables() {
     minimumFees = Math.min(minimumFees, myArray[i - 1].fees);
   }
 }
+
 function updateStatistics() {
   document.getElementById('statistics1').innerHTML = "Total fees: " + totalFees;
   document.getElementById('statistics2').innerHTML = "Total number of students: " + i;
@@ -110,34 +110,15 @@ function updateStatistics() {
   document.getElementById('statistics10').innerHTML = "Minimum fees:  " + minimumFees;
   document.getElementById('statistics11').innerHTML = "Maximum fees:  " + maximumFees;
 }
-function myFunction(x) {
-  console.log("Row index is: " + x.rowIndex);
-}
+
 function updateTable() {
   html += '<tr>';
   html += '<td>' + i + '</td>';
   html += '<td>' + myArray[i - 1].nameOfStudent + '</td>';
   html += '<td>' + myArray[i - 1].city + '</td>';
   html += '<td>' + '$' + myArray[i - 1].fees + '</td>';
+  html += '<td> <a >Edit</a> <a >Delete</a> </td>'
   html += '</tr>';
 
   document.getElementById("table").innerHTML = html;
-}
-
-
-function printStatistics() {
-  console.log(
-    `total fees: ${totalFees};
-    Total students: ${i},
-    Number of students with Name starting with R: ${numberOfStudentsNameStartingWithR}
-    city Name Of Fourth Student: ${cityNameOfFourthStudent}
-    total fees of 3rd and 5th student: ${totalFeesOf3and5Student}
-    students whose fee is between $2000 and $3900: ${totalNoOfStudentsFeeBetween2000And3900}
-    students whose fee is less than $1000: ${totalNumberOfStudentsWithFeesLessThan1000}
-    name starting with S and city name start with Ch: ${nameOfStudentByS_andCityWithCh}
-    Name start with 'J' and city name starting with 'H': ${NameWithJorCityWithH}
-    minimum fees: ${minimumFees}
-    maximum fees: ${maximumFees};
-    `
-  );
 }
