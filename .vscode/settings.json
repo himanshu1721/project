@@ -1,0 +1,6 @@
+{
+  "editor.showDeprecated": false,
+  "editor.suggest.showDeprecated": false,
+  "liveServer.settings.port": 5501,
+  "type": "module"
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  .button {
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button1 {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+
+  body {
+    font-size: 25px;
+  }
+
+  #nameOfStudent {
+    size: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 180px;
+
+    height: 8px;
+  }
+
+  #cityOfStudent {
+    border-radius: 5px;
+
+    padding: 10px;
+    width: 180px;
+    height: 8px;
+  }
+
+  #feesOfStudent {
+    border-radius: 5px;
+    padding: 10px;
+
+    width: 180px;
+    height: 8px;
+  }
+
+  th,
+  td {
+    padding: 15px;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>
+
+<body>
+  <h1>Student Application</h1>
+  <script type="module" src="./Project_task/functionality.js"></script>
+  <a><label>Name </label><br>
+    <input style="font-size:18px;" type="text" id="nameOfStudent"><br></a>
+
+  <a><label>City </label><br>
+    <input style="font-size:18px;" type="text" id="cityOfStudent"><br></a>
+
+  <a><label>Fees </label><br>
+    <input style="font-size:18px;" type="text" id="feesOfStudent"><br></a>
+
+  <button class="button button1" type="button" id="addButton">Add</button>
+
+  <h1>Student List</h1>
+
+
+  <div id="table"></div>
+
+  <h1>Statistics</h1>
+
+  <p id='statistics1'></p>
+  <p id='statistics2'></p>
+  <p id='statistics3'></p>
+  <p id='statistics4'></p>
+  <p id='statistics5'></p>
+  <p id='statistics6'></p>
+  <p id='statistics7'></p>
+  <p id='statistics8'></p>
+  <p id='statistics9'></p>
+  <p id='statistics10'></p>
+  <p id='statistics11'></p>
+
+</body>
+
+</html>
